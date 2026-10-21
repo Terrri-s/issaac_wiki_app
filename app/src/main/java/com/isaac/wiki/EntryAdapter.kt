@@ -16,7 +16,6 @@ class EntryAdapter(
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
         val icon: ImageView = view.findViewById(R.id.iv_icon)
         val name: TextView = view.findViewById(R.id.tv_name)
-        val desc: TextView = view.findViewById(R.id.tv_desc)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -30,8 +29,8 @@ class EntryAdapter(
         holder.icon.setImageBitmap(
             WikiRepository.icon(holder.itemView.context, item)
         )
-        holder.name.text = item.name
-        holder.desc.text = item.desc
+        // 缩略图只显示中文名（去掉 " / English" 后缀）
+        holder.name.text = item.name.split(" / ")[0].trim()
         holder.itemView.setOnClickListener { onClick(position) }
     }
 

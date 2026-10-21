@@ -37,10 +37,10 @@ isaac-wiki/
 │   ├── MainActivity.kt                 # 首页（分类导航 + 搜索）
 │   ├── CategoryActivity.kt             # 分类网格列表
 │   ├── DetailActivity.kt               # 词条详情（互链 / 路线图 / 高亮）
-│   ├── HomeAdapter.kt / EntryAdapter.kt
 │   ├── WikiRepository.kt / WikiModels.kt  # 数据加载与互链检索
-│   ├── SettingsDialog.kt               # 设置小窗（BGM 开关等）
-│   └── MusicPlayer.kt / ItemIconGenerator.kt
+│   ├── SettingsDialog.kt / BgmManager.kt  # 设置小窗与全局背景音乐
+│   ├── HomeAdapter.kt / CategoryAdapter.kt / EntryAdapter.kt
+│   └── ItemIconGenerator.kt / ParticleView.kt / App.kt
 ├── app/src/main/assets/                # 离线图鉴数据与游戏素材配图
 └── app/src/main/res/                   # 布局 / 图标 / 菜单资源
 ```

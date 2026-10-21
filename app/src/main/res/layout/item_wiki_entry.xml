@@ -29,16 +29,4 @@
         android:textSize="12sp"
         android:textStyle="bold"
         tools:text="以撒" />
-
-    <TextView
-        android:id="@+id/tv_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:gravity="center"
-        android:maxLines="1"
-        android:ellipsize="end"
-        android:textColor="@color/text_secondary"
-        android:textSize="10sp"
-        tools:text="游戏主角" />
 </LinearLayout>
