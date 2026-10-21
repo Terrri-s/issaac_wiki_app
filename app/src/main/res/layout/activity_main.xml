@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_card"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/text_primary" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_chip"
+        android:hint="@string/hint_search"
+        android:imeOptions="actionSearch"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.isaac.wiki.ParticleView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="6dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/empty_result"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

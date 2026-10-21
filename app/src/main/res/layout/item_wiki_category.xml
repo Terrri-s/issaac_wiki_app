@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="@drawable/bg_circle"
+        android:textColor="@color/bg_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="人物" />
+
+        <TextView
+            android:id="@+id/tv_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="角色 · 属性 · 效果" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/accent_red"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="30" />
+
+</LinearLayout>

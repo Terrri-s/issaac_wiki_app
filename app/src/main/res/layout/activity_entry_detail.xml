@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_card"
+        app:titleTextColor="@color/text_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/title_detail" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/accent_red"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+            <!-- 人物通关路线图表（路线 -> 成就icon节点 -> 解锁道具） -->
+            <LinearLayout
+                android:id="@+id/routes_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_links_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="相关词条"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/links_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

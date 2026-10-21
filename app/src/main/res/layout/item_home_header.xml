@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:paddingBottom="16dp">
+
+    <!-- 艺术字 Logo（wiki/官方图片） -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:maxHeight="120dp"
+            android:maxWidth="300dp" />
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:text="以撒的结合"
+            android:textColor="#E9C87A"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:letterSpacing="0.35"
+        android:text="THE BINDING OF ISAAC"
+        android:textColor="@color/accent_red"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/home_subtitle"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+</LinearLayout>
